@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+
+    <script>
+       const valorCompra = Number(prompt("insira o valor da compra:"))
+        var vetor = 0
+        var quantParcelas = 0
+        var parcelas = 0
+        while (vetor < 6) {
+            let valorParcela = 0
+            parcelas++
+            alert(parcelas)
+            if (valorCompra / parcelas >= 20) {
+                valorParcela = valorCompra / parcelas
+                    alert(valorParcela)
+                vetor++
+                quantParcelas++
+                alert("quantidade de parcela é:" + quantParcelas)
+                alert(`A compra pode ser dividida em ${quantParcelas} vezes, na valor de ${valorParcela.toFixed(2)} cada.`)
+            } else {
+                alert("valor de compra muito pequeno para parcelar")
+                vetor = 7
+            }
+
+        }
+        
+    </script>
+
+</body>
+</html>

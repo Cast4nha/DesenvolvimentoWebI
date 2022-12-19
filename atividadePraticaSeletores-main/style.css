@@ -1,0 +1,68 @@
+/*Muda a cor da fonte do titulo e subtitulo*/
+#titulo, #subtitulo {
+   color: #3647a1;
+    
+}
+/*Muda as cores das fontes de listas para azul e adiciona o fundo amarelo*/
+#listaOrdenada, #listaNaordenada {
+    color: #1013d5;
+    background-color: #d5d210;
+}
+/*Aumenta fonte do irmão geral*/
+h2 ~ h3 {
+    font-size: 50px;
+}
+/*Aplica cor da fonte para red h2 que é filho direto de rodapé*/
+#rodape > h2 {
+    color: red;
+}
+/*Adiciona um espaçamento na div do rodapé*/
+#rodape div {
+    border: dashed, 17px;
+}
+/*Aplica tamanho da fonte para o irmão adjacente*/
+h2 + h3 {
+    font-size: 50px;
+}
+/*Aplica cor de fundo para todos os elementos que recebem o valor lista*/
+[name = "lista"] {
+    background-color: #e3e2a6;
+}
+/*Muda o estilo da fonte*/
+p {
+    font-family: tahoma, sans-serif;
+}
+/*Aplica cor para todos os filhos impares de aside*/
+aside > :nth-child(add) {
+    background-color: orangered;
+}
+/*Adiciona cor de fundo para todos os elementos da propriedade name*/
+[name] {
+    background-color: #b7e6d5;
+}
+/*Muda a cor de fundo, cor e tamanho da fonte do titulo da tabela*/
+[name = "texto"] {
+    background-color: #0b5eb1;
+    color: #fff;
+    font-size: 20px;
+}
+
+caption > tr {
+    color: purple;
+    background-color: wheat;
+} 
+
+footer > tr {
+    color: wheat;
+    background-color: purple;
+}
+
+tr {
+    color: black;
+    background-color: yellow;
+}
+
+tr{
+    color: white;
+    background-color: black;
+}

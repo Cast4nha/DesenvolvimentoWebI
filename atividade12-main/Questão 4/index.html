@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 4</title>
+</head>
+<body>
+    <script>
+        let copaInicio = 1930;
+        let introduzidos = [];
+        let anosCopa = [];
+        let anoSemCopa = [];
+        let cont;
+        let calcAuxiliar;
+
+        while(true){
+            let anoPrompt = Number(prompt("Digite o ano: (Para encerrar digite 0): "));
+            if(anoPrompt != 0 && anoPrompt != 1942 && anoPrompt != 1946){
+                introduzidos.push(anoPrompt);
+            }
+            if(anoPrompt == 0){
+                break;
+            }
+        }
+        introduzidos.forEach(ano => {
+            calcAuxiliar = ano;
+            if(ano == copaInicio){
+                anosCopa.push(ano);
+
+            }else if(ano > 1930){
+                while(true){
+                    calcAuxiliar = calcAuxiliar - 4;
+                    
+                    if(calcAuxiliar > 1930){
+                        calcAuxiliar = calcAuxiliar - 4;
+                    }
+                    
+                    if(calcAuxiliar == 1930){
+                        anosCopa.push(ano);
+                        break;
+                    }
+                    
+                    if(calcAuxiliar < 1930){
+                        anoSemCopa.push(ano);
+                        break;
+                    }
+                }
+            }else{
+                anoSemCopa.push(ano);
+            }
+        });
+        alert(`ANOS COPA DO MUNDO:  ${anosCopa.join()}\nANOS SEM COPA DO MUNDO:  ${anoSemCopa}`);
+    </script>
+</body>
+</html>

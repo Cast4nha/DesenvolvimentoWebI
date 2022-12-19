@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+
+        :root{
+            --bg-color: black;
+            --bg-second: #444;
+            --font-color: #fff;
+            --font-size-big: 28px;
+            --font-size-small: 16px;;
+        }
+
+        body{
+            background: var(--bg-color);
+            color: var(--font-color);
+        }
+
+        @media screen and (max-width:400px) {
+            body{
+                font-size: x-;
+
+            }
+            
+        }
+
+
+        div {
+            font-size: 40px;
+            margin: 20px;
+            padding: 20px;
+            background-color: coral;
+            border: solid 5px;
+            display: none;
+        }
+
+        
+
+        @media (max-width:600px){
+            .muito-pequeno{
+                display: block;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+            .intervalo{
+                display: block;
+            }
+        }
+
+        @media screen and (max-with: 800px), (orientation: portrait){
+            .pequeno-retrato{
+                display: block;
+            }
+        }
+
+        @media (aspect-ratio: 2/1){
+            body{
+                background-color: blue;
+            }
+        }
+
+        /* PADRÃO MONITORES
+        TELA DE MONITOR PADRÃO 16/9
+        TELA DE MONITOR ULTRAWIDRE: 21/9
+        TELA DE NOTEBOOKS: 16/10
+        */
+    </style>
+</head>
+<body>
+    <div class="muito-pequeno">Muito Pequeno</div>
+    <div class="pequeno-retrato">Pequeno ou Retrato</div>
+    <div class="intervalo">Intervalo</div>
+</body>
+</html>

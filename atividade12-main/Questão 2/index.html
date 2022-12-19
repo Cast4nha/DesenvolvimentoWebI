@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <script>
+        let valor = 0;
+        let escopo = false;
+
+        do{
+            let confirmacao = prompt('Digite 1 para um novo lançamento 2 para parar')
+            if(confirmacao != '1'){
+                break;
+            }
+            let produtoValor = Number(prompt("Digite o valor do produto: R$: "))
+            valor += produtoValor
+        }while(true)
+            if(valor == 0){
+                end()
+            }
+            let produtoValor = Number(prompt(`O valor total é R$ ${valor.toFixed(2)}`))
+
+            if(valorPago > valor){
+                alert(`O troco é R$ ${(valorPago - valor).toFixed(2)}`)
+            }
+            else if(valorPago == valor){
+                alert("Você não possui troco.")
+            }
+            else{
+                alert(`Dinheiro insuficiente, deposite mais notas`)
+            }
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 6</title>
+</head>
+<body>
+    <script>
+        const amostra = Number(prompt("Digite a quantidade de eleitores:"))
+        const branco = Number(prompt("Digite a quantidade de votos em branco:"))
+        const nulos = Number(prompt("Digite a quantidade de votos em nulos:"))
+        const validos = Number(prompt("Digite a quantidade de votos em Validos:"))
+        const valorDeBranco = branco / amostra * 100
+        const valorDeNulos =  nulo / amostra * 100
+        const valorDeValidos = validos / amostra * 100
+        alert(`Porcentagem representativo é de:\n Branco:${valorDeBranco}% \n Nulos:${valorDeNulos}% \n Validos:${valorDeValidos}% `) 
+    </script>
+</body>
+</html>

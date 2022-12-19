@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+
+    <script>
+     let nome = String(prompt('Digite o seu nome:'))
+     let valorCompra = Number(prompt('Digite o valor da sua compra:'))
+     function desconto(valorCompra) {
+        if(valorCompra <= 200){
+            alert(valorCompra * 0,90)
+        }
+        else if (valorCompra > 200 || 500){
+            alert(valorCompra * 0,85)
+        }
+        else if (valorCompra > 500){
+            alert(valorCompra * 0,80)
+        }
+     }
+     alert(`Seu nome:${nome}, e o valor da sua compra:${desconto}`)
+
+    </script>
+
+</body>
+</html>
